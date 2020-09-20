@@ -18,6 +18,7 @@ export default function Car(props) {
             {car.mileage && <h3>Mileage: {car.mileage}</h3>}
             {car.color && <h3>Color: {car.color}</h3>}
             {car.doors && <h3>Doors: {car.doors}</h3>}
+            {car.autoTrans && <h3>Automatic Transmission</h3>}
             {car.wrecked===true && <h3>**WRECKED**</h3>}
         </div>
     )

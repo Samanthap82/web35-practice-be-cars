@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link, Route, Switch, useRouteMatch, useParams} from 'react-router-dom';
 import Car from './Car';
+import styled from 'styled-components';
 
 export default function Buy(props) {
     const {cars} = props;
@@ -14,7 +15,7 @@ export default function Buy(props) {
         {cars.map(car => {
             console.log(car)
             return (
-                <div>
+                <div className='buy-list'>
                     <Link to={`${url}/${car._id}`}>
                         {car.year} {car.make} {car.model}
                     </Link>
